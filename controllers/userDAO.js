@@ -12,8 +12,7 @@ exports.create = async function(req, resp){
     }else{
 
       const data = {
-        username: crypto.createHash('md5').update(req.body.username).digest('hex'),
-        password: crypto.createHash('md5').update(req.body.password).digest('hex')
+        username: crypto.createHash('md5').update(req.body.username).digest('hex')
       };
 
       const usuario = await User.find(data)
@@ -21,6 +20,9 @@ exports.create = async function(req, resp){
       if(usuario){
         resp.status(400).json({error:'el usuario ya existe'})
       }else{
+        
+        data.password = crypto.createHash('md5').update(req.body.password).digest('hex')
+        
         await User.create(data)
         resp.status(200).json({msj:'exito', usuario: req.body.username})
       }
@@ -55,5 +57,14 @@ exports.find = async function(req, resp){
       }
       
     }
+
+};
+
+
+exports.logout = async function(req, resp){
+
+  delete req.session.username
+  
+  resp.status(200).json({msj:'cierre de sesion exitoso'})
 
 };

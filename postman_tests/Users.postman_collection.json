@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Joel\",\r\n    \"password\":\"123\"\r\n}",
+					"raw": "{\r\n    \"username\": \"Kyokofxvj\",\r\n    \"password\":\"klsddsdvvgvvv\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,12 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5050/api/v1/todo/users/user",
-					"protocol": "http",
+					"raw": "https://pine-nice-reaper.glitch.me/api/v1/todo/users/user",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pine-nice-reaper",
+						"glitch",
+						"me"
 					],
-					"port": "5050",
 					"path": [
 						"api",
 						"v1",
@@ -38,7 +39,7 @@
 			"response": []
 		},
 		{
-			"name": "usuario",
+			"name": "login",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -55,12 +56,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5050/api/v1/todo/users/user?username=Joel&password=123",
-					"protocol": "http",
+					"raw": "https://pine-nice-reaper.glitch.me/api/v1/todo/users/user?username=Kyokofxv&password=pppppppp",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pine-nice-reaper",
+						"glitch",
+						"me"
 					],
-					"port": "5050",
 					"path": [
 						"api",
 						"v1",
@@ -71,11 +73,57 @@
 					"query": [
 						{
 							"key": "username",
-							"value": "Joel"
+							"value": "Kyokofxv"
 						},
 						{
 							"key": "password",
-							"value": "123"
+							"value": "pppppppp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pine-nice-reaper.glitch.me/api/v1/todo/users/user?username=Kyokofxv&password=pppppppp",
+					"protocol": "https",
+					"host": [
+						"pine-nice-reaper",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"v1",
+						"todo",
+						"users",
+						"user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Kyokofxv"
+						},
+						{
+							"key": "password",
+							"value": "pppppppp"
 						}
 					]
 				}

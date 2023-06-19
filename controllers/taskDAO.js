@@ -10,8 +10,9 @@ exports.create = async function(req, resp){
   }else{
 
     const task = await Task.find({'name': req.body.name})
+    console.log(task)
 
-    if(task){
+    if(task.length!=0){
   
       resp.status(400).json({error:'ya existe esa tarea'})
 
@@ -57,6 +58,19 @@ exports.find = async function(req, resp){
       resp.status(404).json({msj:'tarea inexistente'})
     }
 
+  }
+
+};
+
+
+exports.findAll = async function(req, resp){
+
+  const task = await Task.findAll()
+  
+  if(task){
+    resp.status(200).json({msj:'exito', task: task})
+  }else{
+    resp.status(404).json({msj:'tareas inexistentes'})
   }
 
 };

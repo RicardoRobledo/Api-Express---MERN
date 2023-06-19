@@ -57,6 +57,26 @@ Task.find = async function(task){
 }
 
 
+Task.findAll=async function(){
+
+  const collection = db.collection('tasks');
+
+  try {
+
+    const result = collection.find({}).toArray();
+    console.log('Tareas encontradas correctamente');
+    return result;
+
+  } catch (err) {
+
+    console.error('Error al buscar la tarea:', err);
+    throw err;
+
+  }
+
+}
+
+
 // -------------------------------------------
 //                    update
 // -------------------------------------------

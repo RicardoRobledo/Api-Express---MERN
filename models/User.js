@@ -31,6 +31,13 @@ User.create = async function(new_user){
 }
 
 
+User.logout = function(user){
+
+  
+
+}
+
+
 // -------------------------------------------
 //                    find
 // -------------------------------------------

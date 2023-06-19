@@ -46,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Qa\",\r\n    \"status\":\"terminada\"\r\n}",
+					"raw": "{\r\n    \"name\":\"El kyop\",\r\n    \"status\":\"terminada\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -54,12 +54,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5050/api/v1/todo/tasks/task",
-					"protocol": "http",
+					"raw": "https://pine-nice-reaper.glitch.me/api/v1/todo/tasks/task",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pine-nice-reaper",
+						"glitch",
+						"me"
 					],
-					"port": "5050",
 					"path": [
 						"api",
 						"v1",
@@ -103,6 +104,36 @@
 						{
 							"key": "name",
 							"value": "DB"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/v1/todo/tasks/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"v1",
+						"todo",
+						"tasks",
+						"task"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Testing",
+							"disabled": true
 						}
 					]
 				}
