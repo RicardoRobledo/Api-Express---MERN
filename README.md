@@ -7,7 +7,7 @@ This is an easy api of a to-do app
 
 <br>
 
-# Made up with 🛠️
+## Made up with 🛠️
 - nodejs
 - express
 - mongodb
@@ -18,10 +18,10 @@ This is an easy api of a to-do app
 
 <br>
 
-# Video
+## Video
 - [Link](https://youtube.com/playlist?list=PL-aX2gJc0HohQ6t-WvehhP3Z-utxdBgyB&feature=shared)
 
 <br>
 
-# Author ✒️
+## Author ✒️
 - [Ricardo Robledo](https://github.com/RicardoRobledo/)
