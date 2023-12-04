@@ -18,5 +18,10 @@ This is an easy api of a to-do app
 
 <br>
 
+# Video
+- [Link](https://youtube.com/playlist?list=PL-aX2gJc0HohQ6t-WvehhP3Z-utxdBgyB&feature=shared)
+
+<br>
+
 # Author ✒️
 - [Ricardo Robledo](https://github.com/RicardoRobledo/)
